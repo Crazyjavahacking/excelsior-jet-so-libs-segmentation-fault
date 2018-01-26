@@ -1,9 +1,7 @@
 apply plugin: 'java'
 
 repositories {
-    maven {
-        url = 'http://repo/central'
-    }
+    mavenCentral()
 }
 
 dependencies {
