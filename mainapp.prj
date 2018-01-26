@@ -1,0 +1,35 @@
+-compilewithfixedheap-
+-genstackalloc+
+-genstacktrace+
+-global-
+-gui-
+%-ignoreclassduplication+
+%-ignorememberabsence+
+-inline+
+-splashgetfrommanifest-
+-cryptseed=12345
+
+-classabsence=HANDLE
+-compilerheap=1207959552
+-inlinelimit=100
+-inlinetolimit=1000
+-jetrt=Desktop
+-jetvmprop=-Djet.jit.fast -Djet.gc.heaplimit:0 -Djet.stack.trace
+-saprofmode=NONE
+-stacklimit=900000
+
+-outputdir=build/jet-mainapp
+-outputname=mainapp
+-main=apollo/Main
+
+%imports Project Data Base associated with the specified project
+!uses commons-io.prj
+!uses commons-lang.prj
+!uses apollo-api.prj
+%!uses apollo-impl.prj
+
+!classpathentry build/libs/jet-multimodule-prototype.jar
+    -pack=noncompiled
+    -protect=all
+    -optimize=all
+!end

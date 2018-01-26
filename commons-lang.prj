@@ -1,0 +1,30 @@
+-compilewithfixedheap-
+-genstackalloc+
+-genstacktrace+
+-global-
+-gui-
+%-ignoreclassduplication+
+%-ignorememberabsence+
+-inline+
+-splashgetfrommanifest-
+-cryptseed=12345
+
+-classabsence=HANDLE
+-compilerheap=1207959552
+-inlinelimit=100
+-inlinetolimit=1000
+-jetrt=Desktop
+-jetvmprop=-Djet.jit.fast -Djet.gc.heaplimit:0 -Djet.stack.trace
+-saprofmode=NONE
+-stacklimit=900000
+
+-outputdir=build/jet-commons-lang
+-outputname=commons-lang-3.7
+
+-gendll+
+
+!classpathentry build/runtimeClasspath/commons-lang3-3.7.jar
+    -pack=noncompiled
+    -protect=all
+    -optimize=all
+!end
