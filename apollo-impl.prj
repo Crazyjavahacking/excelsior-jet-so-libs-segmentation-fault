@@ -23,7 +23,7 @@
 
 -gendll+
 
-!uses apollo-api.prj
+%!uses apollo-api.prj
 
 !classpathentry build/runtimeClasspath/impl.jar
     -pack=noncompiled
